@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Listings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JobSearch.com</h1>
+    <form id="search-form">
+      <input type="text" id="keyword" placeholder="Enter keyword">
+      <input type="text" id="location" placeholder="Enter location">
+      
+      <input type="radio" name="job-type" value="full-time" id="full-time">
+          <label for="full-time">Full Time</label>
+      <input type="radio" name="job-type" value="part-time" id="part-time">
+          <label for="part-time">Part Time</label>
+          
+          <button type="submit">Search</button>
+        
+    </form>
+
+    <div class="job-card-container">
+        <div class="job-card">
+          <div class="job-card__logo"></div>
+          <div class="job-card__details">
+            <div class="job-card__title">Job Title</div>
+            <div class="job-card__company">Company Name</div>
+            <div class="job-card__location">Location</div>
+            <div class="job-card__type">Job Type</div>
+            <a href="#" class="job-card__apply">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    
+
+
+    
+        
+        
+          
+        
+      </div>
+      
+  </header>
+  <main>
+    <section id="job-listings">
+      
+      <div id="jobs"></div>
+
+    </section>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>
