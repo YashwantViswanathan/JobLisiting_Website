@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://www.champ.aero/hubfs/Downloads%20Brochures%202_Portals.png");
+    background-size: 100%;
+
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  form input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  form button[type="submit"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .job {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .job h3 {
+    margin: 0;
+  }
+  
+  .job p {
+    margin: 5px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    form input[type="text"], form button[type="submit"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .job-card {
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .job-card__logo {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        border-radius: 50%;
+      }
+
+      .job-card__details {
+        flex-grow: 1;
+        margin-left: 20px;
+      }
+
+      .job-card__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .job-card__company {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .job-card__location {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 5px;
+      }
+
+      .job-card__type {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 5px;
+      }
+
+      .job-card__apply {
+        font-size: 14px;
+        color: #0077b5;
+        text-decoration: none;
+      }
+
+      /* Centering the Job Card */
+      .job-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+  }
+  
